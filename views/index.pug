@@ -1,1 +1,869 @@
-include index.html
+doctype html
+//if lt IE 7
+//if IE 7
+//if IE 8
+// [if gt IE 8] <!
+// <![endif]
+head
+  // Meta
+  meta(charset='utf-8')
+  //if IE
+    meta(http-equiv='X-UA-Compatible' content='IE=edge,chrome=1')
+  title Aapni Kala
+  meta(name='description' content='')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  // Favicon
+  link(rel='shortcut icon' type='image/x-icon' href='images/favicon.ico')
+  // CSS Styles
+  link(rel='stylesheet' href='stylesheets/bootstrap.min.css')
+  link(rel='stylesheet' href='stylesheets/main.css')
+  // Animate CSS
+  link(rel='stylesheet' href='stylesheets/animate.min.css')
+  // Revolution Slider
+  link(rel='stylesheet' href='stylesheets/settings.css')
+  link(rel='stylesheet' href='stylesheets/layers.css')
+  link(rel='stylesheet' href='stylesheets/navigation.css')
+  // Owl Carousel
+  link(rel='stylesheet' href='stylesheets/owl.carousel.css')
+  // Google Web Fonts
+  link(href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css')
+  link(href='https://fonts.googleapis.com/css?family=Merriweather:400,300,700,900' rel='stylesheet' type='text/css')
+  // Font Awesome
+  link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css')
+//if lt IE 8
+  p.browserupgrade
+    | You are using an 
+    strong outdated
+    |  browser. Please 
+    a(href='http://browsehappy.com/') upgrade your browser
+    |  to improve your experience.
+// Loader Start
+#preloader
+  .preloader-container
+    .sk-folding-cube
+      .sk-cube1.sk-cube
+      .sk-cube2.sk-cube
+      .sk-cube4.sk-cube
+      .sk-cube3.sk-cube
+// End Loader Start
+// Top Bar Start
+.ws-topbar
+  .pull-left
+    .ws-topbar-message.hidden-xs
+      p
+        | Free Shipping on orders over 
+        span 50$ in USA
+  .pull-right
+    // Shop Menu
+    ul.ws-shop-menu
+      // Account
+      li.ws-shop-account
+        a.btn.btn-sm(href='my-account.html') My Account
+      // Cart
+      li.ws-shop-cart
+        a.btn.btn-sm(href='#x') Cart (2)
+        // Cart Popover
+        .ws-shop-minicart
+          .minicart-content
+            // Added Items
+            ul.minicart-content-items.clearfix
+              // Item
+              li.media
+                .media-left
+                  // Image
+                  a(href='#')
+                    img.media-object(src='images/5.jpg' alt='Alternative Text')
+                .minicart-content-details.media-body
+                  // Title
+                  h3
+                    a(href='#') Pinning Moon
+                  // Price
+                  span.minicart-content-price $25.00
+                // Remove
+                span.minicart-content-remove
+                  a(href='#')
+                    i.fa.fa-times
+              // Item
+              li.media
+                .media-left
+                  // Image
+                  a(href='#')
+                    img.media-object(src='images/4.jpg' alt='Alternative Text')
+                .minicart-content-details.media-body
+                  // Title
+                  h3
+                    a(href='#') Arkose Factor
+                  // Price
+                  span.minicart-content-price $25.00
+                // Remove
+                span.minicart-content-remove
+                  a(href='#')
+                    i.fa.fa-times
+            // Subtotal
+            .minicart-content-total
+              h3 Subtotal: $50.00
+            // Checkout
+            .ws-shop-menu-checkout
+              .ws-shop-viewcart.pull-left
+                a.btn.btn-sm(href='#x') View Cart
+              .ws-shop-checkout.pull-right
+                a.btn.btn-sm(href='#x') Checkout
+        // End Cart Popover
+// Top Bar End
+// Header Start
+header.ws-header-static
+  // Navbar
+  nav.navbar.ws-navbar.navbar-default
+    .container
+      .navbar-header
+        button.navbar-toggle.collapsed(type='button' data-toggle='collapse' data-target='#bs-example-navbar-collapse-1' aria-expanded='false')
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+      // Logo
+      .ws-logo.ws-center
+        a(href='index.html')
+          img.img-responsive(src='images/logo-black.png' alt='Alternative Text')
+      #bs-example-navbar-collapse-1.collapse.navbar-collapse
+        ul.nav.navbar-nav.navbar-left
+          li.dropdown
+            a.dropdown-toggle(href='#x' data-toggle='dropdown' data-hover='dropdown' data-animations='fadeIn')
+              | Home 
+              span.caret
+            ul.dropdown-menu
+              li
+                a(href='index.html') Parallax Image
+              li
+                a(href='slider-fullwidth.html') Slider FullWidth
+              li
+                a(href='slider-fullscreen.html') Slider FullScreen
+              li
+                a(href='3d-parallax.html') 3D Parallax Hero
+          li
+            a(href='about.html') About
+          li.dropdown
+            a.dropdown-toggle(href='#x' data-toggle='dropdown' data-hover='dropdown' data-animations='fadeIn')
+              | Shop 
+              span.caret
+            ul.dropdown-menu
+              li
+                a(href='shop.html') Default Shop Page
+              li
+                a(href='single-product.html') Single Product
+              li
+                a(href='shopping-cart.html') Shopping Cart
+              li
+                a(href='my-account.html') My Account / Register
+              li
+                a(href='checkout.html') Checkout
+        ul.nav.navbar-nav.navbar-right
+          li.dropdown
+            a.dropdown-toggle(href='#x' data-toggle='dropdown' data-hover='dropdown' data-animations='fadeIn')
+              | Pages 
+              span.caret
+            ul.dropdown-menu
+              li
+                a(href='index.html') Header Style 1
+              li
+                a(href='second-header.html') Header Style 2
+              li
+                a(href='third-header.html') Header Style 3
+              li
+                a(href='faq.html#shipping') Shipping &amp; Return
+              li
+                a(href='faq.html#privacy') Privacy Policy
+              li
+                a(href='faq.html') F.A.Q
+          li
+            a(href='journal.html') Journal
+          li
+            a(href='contact.html') Contact
+// End Header
+// Page Content
+.container.ws-page-container
+  .row
+    .ws-shop-page
+      // Categories Nav
+      ul.nav.nav-tabs(role='tablist')
+        li.active(role='presentation')
+          a(href='#all' aria-controls='all' role='tab' data-toggle='tab') All (94)
+        li(role='presentation')
+          a(href='#prints' aria-controls='prints' role='tab' data-toggle='tab') Abstract Prints (16)
+        li(role='presentation')
+          a(href='#illustrated' aria-controls='illustrated' role='tab' data-toggle='tab') Illustrated Prints (18)
+        li(role='presentation')
+          a(href='#journals' aria-controls='journals' role='tab' data-toggle='tab') Journals (6)
+        li(role='presentation')
+          a(href='#sale' aria-controls='sale' role='tab' data-toggle='tab') Sale (33)
+      // Categories Content
+      .tab-content
+        // All
+        #all.tab-pane.fade.in.active(role='tabpanel')
+          // Item
+          each element in products
+          .col-sm-6.col-md-4.ws-works-item
+            a(href='#')
+              .ws-item-offer
+                // Image
+                figure
+                  img.img-responsive(src='images/5.jpg' alt='Alternative Text')
+              .ws-works-caption.text-center
+                // Item Category
+                .ws-item-category Abstracts Prints
+                // Title
+                h3.ws-item-title Pinning Moon
+                .ws-item-separator
+                // Price
+                .ws-item-price
+                  del $50.00
+                  ins $25.00
+          // Item
+          .col-sm-6.col-md-4.ws-works-item
+            a(href='#')
+              // Image
+              figure
+                img.img-responsive(src='images/4.jpg' alt='Alternative Text')
+              .ws-works-caption.text-center
+                // Item Category
+                .ws-item-category Illustrated Prints
+                // Title
+                h3.ws-item-title Arkose Factor
+                .ws-item-separator
+                // Price
+                .ws-item-price $150.00
+          // Item
+          .col-sm-6.col-md-4.ws-works-item
+            a(href='#')
+              // Image
+              figure
+                img.img-responsive(src='images/6.jpg' alt='Alternative Text')
+              .ws-works-caption.text-center
+                // Item Category
+                .ws-item-category Abstract Prints
+                // Title
+                h3.ws-item-title Interstellar
+                .ws-item-separator
+                // Price
+                .ws-item-price $75.00
+          // Item
+          .col-sm-6.col-md-4.ws-works-item
+            a(href='#')
+              .ws-item-offer
+                // Image
+                figure
+                  img.img-responsive(src='images/4.jpg' alt='Alternative Text')
+              .ws-works-caption.text-center
+                // Item Category
+                .ws-item-category Abstract Prints
+                // Title
+                h3.ws-item-title Pinning Moon
+                .ws-item-separator
+                // Price
+                .ws-item-price
+                  del $50.00
+                  ins $25.00
+          // Item
+          .col-sm-6.col-md-4.ws-works-item
+            a(href='#')
+              // Image
+              figure
+                img.img-responsive(src='images/1.jpg' alt='Alternative Text')
+              .ws-works-caption.text-center
+                // Item Category
+                .ws-item-category Illustrated Prints
+                // Title
+                h3.ws-item-title Arkose Factor
+                .ws-item-separator
+                // Price
+                .ws-item-price $150.00
+          // Item
+          .col-sm-6.col-md-4.ws-works-item
+            a(href='#')
+              // Image
+              figure
+                img.img-responsive(src='images/2.jpg' alt='Alternative Text')
+              .ws-works-caption.text-center
+                // Item Category
+                .ws-item-category Abstract Prints
+                // Title
+                h3.ws-item-title Interstellar
+                .ws-item-separator
+                // Price
+                .ws-item-price $75.00
+          // Item
+          .col-sm-6.col-md-6.ws-works-item
+            a(href='#')
+              .ws-item-offer
+                // Image
+                figure
+                  img.img-responsive(src='images/3.jpg' alt='Alternative Text')
+              .ws-works-caption.text-center
+                // Item Category
+                .ws-item-category Journal
+                // Title
+                h3.ws-item-title Rubby Hubby
+                .ws-item-separator
+                // Price
+                .ws-item-price $53.00
+          // Item
+          .col-sm-6.col-md-6.ws-works-item
+            a(href='#')
+              .ws-item-offer
+                // Image
+                figure
+                  img.img-responsive(src='images/7.jpg' alt='Alternative Text')
+              .ws-works-caption.text-center
+                // Item Category
+                .ws-item-category Abstract Prints
+                // Title
+                h3.ws-item-title Pinning Moon
+                .ws-item-separator
+                // Price
+                .ws-item-price
+                  del $50.00
+                  ins $25.00
+          // Item
+          .col-sm-6.col-md-4.ws-works-item
+            a(href='#')
+              // Image
+              figure
+                img.img-responsive(src='images/3.jpg' alt='Alternative Text')
+              .ws-works-caption.text-center
+                // Item Category
+                .ws-item-category Abstract Prints
+                // Title
+                h3.ws-item-title Lake House
+                .ws-item-separator
+                // Price
+                .ws-item-price $33.00
+          // Item
+          .col-sm-6.col-md-4.ws-works-item
+            a(href='#')
+              // Image
+              figure
+                img.img-responsive(src='images/2.jpg' alt='Alternative Text')
+              .ws-works-caption.text-center
+                // Item Category
+                .ws-item-category Illustrated Prints
+                // Title
+                h3.ws-item-title Sorbetto
+                .ws-item-separator
+                // Price
+                .ws-item-price $123.00
+          // Item
+          .col-sm-6.col-md-4.ws-works-item
+            a(href='#')
+              // Image
+              figure
+                img.img-responsive(src='images/2.jpg' alt='Alternative Text')
+              .ws-works-caption.text-center
+                // Item Category
+                .ws-item-category Journals
+                // Title
+                h3.ws-item-title Thinking Wood
+                .ws-item-separator
+                // Price
+                .ws-item-price $23.00
+          // Item
+          .col-sm-6.col-md-6.ws-works-item
+            a(href='#')
+              .ws-item-offer
+                // Image
+                figure
+                  img.img-responsive(src='images/3.jpg' alt='Alternative Text')
+              .ws-works-caption.text-center
+                // Item Category
+                .ws-item-category Illustrated Prints
+                // Title
+                h3.ws-item-title Grey Mountains
+                .ws-item-separator
+                // Price
+                .ws-item-price $10.00
+          // Item
+          .col-sm-6.col-md-6.ws-works-item
+            a(href='#')
+              // Image
+              figure
+                img.img-responsive(src='images/4.jpg' alt='Alternative Text')
+              .ws-works-caption.text-center
+                // Item Category
+                .ws-item-category Abstract Prints
+                // Title
+                h3.ws-item-title Thinking Wood
+                .ws-item-separator
+                // Price
+                .ws-item-price $23.00
+        // Abstract Prints
+        #prints.tab-pane.fade(role='tabpanel')
+          // Item
+          .col-sm-6.col-md-4.ws-works-item
+            a(href='#')
+              // Image
+              figure
+                img.img-responsive(src='images/1.jpg' alt='Alternative Text')
+              .ws-works-caption.text-center
+                // Item Category
+                .ws-item-category Abstract Prints
+                // Title
+                h3.ws-item-title Thinking Wood
+                .ws-item-separator
+                // Price
+                .ws-item-price $23.00
+          // Item
+          .col-sm-6.col-md-4.ws-works-item
+            a(href='#')
+              .ws-item-offer
+                // Image
+                figure
+                  img.img-responsive(src='images/2.jpg' alt='Alternative Text')
+              .ws-works-caption.text-center
+                // Item Category
+                .ws-item-category Abstract Prints
+                // Title
+                h3.ws-item-title Pinning Moon
+                .ws-item-separator
+                // Price
+                .ws-item-price $25.00
+          // Item
+          .col-sm-6.col-md-4.ws-works-item
+            a(href='#')
+              // Image
+              figure
+                img.img-responsive(src='images/3.jpg' alt='Alternative Text')
+              .ws-works-caption.text-center
+                // Item Category
+                .ws-item-category Abstract Prints
+                // Title
+                h3.ws-item-title Interstellar
+                .ws-item-separator
+                // Price
+                .ws-item-price $75.00
+          // Item
+          .col-sm-6.col-md-4.ws-works-item
+            a(href='#')
+              .ws-item-offer
+                // Image
+                figure
+                  img.img-responsive(src='images/4.jpg' alt='Alternative Text')
+              .ws-works-caption.text-center
+                // Item Category
+                .ws-item-category Big Sea
+                // Title
+                h3.ws-item-title Pinning Moon
+                .ws-item-separator
+                // Price
+                .ws-item-price $50.00
+          // Item
+          .col-sm-6.col-md-4.ws-works-item
+            a(href='#')
+              // Image
+              figure
+                img.img-responsive(src='images/5.jpg' alt='Alternative Text')
+              .ws-works-caption.text-center
+                // Item Category
+                .ws-item-category Abstract Prints
+                // Title
+                h3.ws-item-title Long Desert
+                .ws-item-separator
+                // Price
+                .ws-item-price $65.00
+          // Item
+          .col-sm-6.col-md-4.ws-works-item
+            a(href='#')
+              // Image
+              figure
+                img.img-responsive(src='images/6.jpg' alt='Alternative Text')
+              .ws-works-caption.text-center
+                // Item Category
+                .ws-item-category Abstract Prints
+                // Title
+                h3.ws-item-title Desert
+                .ws-item-separator
+                // Price
+                .ws-item-price $15.00
+        // Illustrated Prints
+        #illustrated.tab-pane.fade(role='tabpanel')
+          // Item
+          .col-sm-6.col-md-4.ws-works-item
+            a(href='#')
+              // Image
+              figure
+                img.img-responsive(src='images/1.jpg' alt='Alternative Text')
+              .ws-works-caption.text-center
+                // Item Category
+                .ws-item-category Illustrated Prints
+                // Title
+                h3.ws-item-title Pink Flamingo
+                .ws-item-separator
+                // Price
+                .ws-item-price $50.00
+          // Item
+          .col-sm-6.col-md-4.ws-works-item
+            a(href='#')
+              // Image
+              figure
+                img.img-responsive(src='images/4.jpg' alt='Alternative Text')
+              .ws-works-caption.text-center
+                // Item Category
+                .ws-item-category Illustrated Prints
+                // Title
+                h3.ws-item-title Ghost Mountains
+                .ws-item-separator
+                // Price
+                .ws-item-price $44.00
+          // Item
+          .col-sm-6.col-md-4.ws-works-item
+            a(href='#')
+              // Image
+              figure
+                img.img-responsive(src='images/3.jpg' alt='Alternative Text')
+              .ws-works-caption.text-center
+                // Item Category
+                .ws-item-category Illustrated Prints
+                // Title
+                h3.ws-item-title Arkose Factor
+                .ws-item-separator
+                // Price
+                .ws-item-price $92.00
+        // Journals
+        #journals.tab-pane.fade(role='tabpanel')
+          // Item
+          .col-sm-6.col-md-4.ws-works-item
+            a(href='#')
+              // Image
+              figure
+                img.img-responsive(src='images/1.jpg' alt='Alternative Text')
+              .ws-works-caption.text-center
+                // Item Category
+                .ws-item-category Journals
+                // Title
+                h3.ws-item-title Yellow Laguna
+                .ws-item-separator
+                // Price
+                .ws-item-price $43.00
+          // Item
+          .col-sm-6.col-md-4.ws-works-item
+            a(href='#')
+              // Image
+              figure
+                img.img-responsive(src='images/2.jpg' alt='Alternative Text')
+              .ws-works-caption.text-center
+                // Item Category
+                .ws-item-category Journals
+                // Title
+                h3.ws-item-title Thinking Wood
+                .ws-item-separator
+                // Price
+                .ws-item-price $23.00
+          // Item
+          .col-sm-6.col-md-4.ws-works-item
+            a(href='#')
+              .ws-item-offer
+                // Image
+                figure
+                  img.img-responsive(src='images/3.jpg' alt='Alternative Text')
+              .ws-works-caption.text-center
+                // Item Category
+                .ws-item-category Journal
+                // Title
+                h3.ws-item-title Rubby Hubby
+                .ws-item-separator
+                // Price
+                .ws-item-price $53.00
+          // Item
+          .col-sm-6.col-md-4.ws-works-item
+            a(href='#')
+              // Image
+              figure
+                img.img-responsive(src='images/4.jpg' alt='Alternative Text')
+              .ws-works-caption.text-center
+                // Item Category
+                .ws-item-category Journals
+                // Title
+                h3.ws-item-title twinkle twinkle
+                .ws-item-separator
+                // Price
+                .ws-item-price $13.00
+          // Item
+          .col-sm-6.col-md-4.ws-works-item
+            a(href='#')
+              // Image
+              figure
+                img.img-responsive(src='images/5.jpg' alt='Alternative Text')
+              .ws-works-caption.text-center
+                // Item Category
+                .ws-item-category Journals
+                // Title
+                h3.ws-item-title White Pantera
+                .ws-item-separator
+                // Price
+                .ws-item-price $93.00
+          // Item
+          .col-sm-6.col-md-4.ws-works-item
+            a(href='#')
+              .ws-item-offer
+                // Image
+                figure
+                  img.img-responsive(src='images/6.jpg' alt='Alternative Text')
+              .ws-works-caption.text-center
+                // Item Category
+                .ws-item-category Journal
+                // Title
+                h3.ws-item-title Green Apple
+                .ws-item-separator
+                // Price
+                .ws-item-price $123.00
+        // Sale
+        #sale.tab-pane.fade(role='tabpanel')
+          // Item
+          .col-sm-6.col-md-4.ws-works-item
+            a(href='#')
+              .ws-item-offer
+                // Image
+                figure
+                  img.img-responsive(src='images/3.jpg' alt='Alternative Text')
+                // Sale Caption
+                .ws-item-sale
+                  span Sale
+              .ws-works-caption.text-center
+                // Item Category
+                .ws-item-category Illustrated Prints
+                // Title
+                h3.ws-item-title Honey Beer
+                .ws-item-separator
+                // Price
+                .ws-item-price
+                  del $23.00
+                  ins $10.00
+          // Item
+          .col-sm-6.col-md-4.ws-works-item
+            a(href='#')
+              .ws-item-offer
+                // Image
+                figure
+                  img.img-responsive(src='images/1.jpg' alt='Alternative Text')
+                // Sale Caption
+                .ws-item-sale
+                  span Sale
+              .ws-works-caption.text-center
+                // Item Category
+                .ws-item-category Abstract Prints
+                // Title
+                h3.ws-item-title Pinning Moon
+                .ws-item-separator
+                // Price
+                .ws-item-price
+                  del $50.00
+                  ins $25.00
+          // Item
+          .col-sm-6.col-md-4.ws-works-item
+            a(href='#')
+              .ws-item-offer
+                // Image
+                figure
+                  img.img-responsive(src='images/4.jpg' alt='Alternative Text')
+                // Sale Caption
+                .ws-item-sale
+                  span Sale
+              .ws-works-caption.text-center
+                // Item Category
+                .ws-item-category Illustrated Prints
+                // Title
+                h3.ws-item-title Grey Mountains
+                .ws-item-separator
+                // Price
+                .ws-item-price
+                  del $43.00
+                  ins $22.00
+          // Item
+          .col-sm-6.col-md-4.ws-works-item
+            a(href='#')
+              .ws-item-offer
+                // Image
+                figure
+                  img.img-responsive(src='images/2.jpg' alt='Alternative Text')
+                // Sale Caption
+                .ws-item-sale
+                  span Sale
+              .ws-works-caption.text-center
+                // Item Category
+                .ws-item-category Abstract Prints
+                // Title
+                h3.ws-item-title New Desert
+                .ws-item-separator
+                // Price
+                .ws-item-price
+                  del $150.00
+                  ins $75.00
+          // Item
+          .col-sm-6.col-md-4.ws-works-item
+            a(href='#')
+              .ws-item-offer
+                // Image
+                figure
+                  img.img-responsive(src='images/2.jpg' alt='Alternative Text')
+                // Sale Caption
+                .ws-item-sale
+                  span Sale
+              .ws-works-caption.text-center
+                // Item Category
+                .ws-item-category Journals
+                // Title
+                h3.ws-item-title Red Flowers
+                .ws-item-separator
+                // Price
+                .ws-item-price
+                  del $94.00
+                  ins $52.00
+          // Item
+          .col-sm-6.col-md-4.ws-works-item
+            a(href='#')
+              .ws-item-offer
+                // Image
+                figure
+                  img.img-responsive(src='images/4.jpg' alt='Alternative Text')
+                // Sale Caption
+                .ws-item-sale
+                  span Sale
+              .ws-works-caption.text-center
+                // Item Category
+                .ws-item-category Journals
+                // Title
+                h3.ws-item-title Pink Martini
+                .ws-item-separator
+                // Price
+                .ws-item-price
+                  del $250.00
+                  ins $125.00
+      // End Categories Content
+      // Load More
+      .ws-more-btn-holder.col-sm-12
+        a.btn.ws-more-btn(href='#x')  Load More
+// End Page Content
+// Instagram Content
+section#ws-instagram-section
+  .container
+    .row.vertical-align
+      // Instagram Information
+      .col-sm-3
+        .ws-instagram-header
+          h3 Instagram
+          br
+          a.ws-instagram-link(href='https://www.instagram.com/' target='_blank')  @artday
+          p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.
+      // Instagram Item
+      .col-sm-3.ws-instagram-item(data-sr='wait 0.1s, ease-in 20px')
+        a(href='https://www.instagram.com/' target='_blank')
+          img.img-responsive(src='images/1.jpg' alt='Alternative Text')
+      // Instagram Item
+      .col-sm-3.ws-instagram-item(data-sr='wait 0.3s, ease-in 20px')
+        a(href='https://www.instagram.com/' target='_blank')
+          img.img-responsive(src='images/4.jpg' alt='Alternative Text')
+      // Instagram Item
+      .col-sm-3.ws-instagram-item(data-sr='wait 0.5s, ease-in 20px')
+        a(href='https://www.instagram.com/' target='_blank')
+          img.img-responsive(src='images/8.jpg' alt='Alternative Text')
+// End Instagram Content
+// Subscribe Section
+section.ws-subscribe-section
+  .container
+    .row
+      // Subscribe Content
+      .ws-subscribe-content.text-center.clearfix
+        .col-sm-8.col-sm-offset-2
+          h3 Sign up for the newsletter
+          .ws-separator
+          // Form
+          form.form-inline
+            .form-group
+              input.form-control(type='email' placeholder='Enter your email')
+            // Button
+            a.btn.ws-btn-subscribe Subscribe
+// End Subscribe Section
+// Footer Start
+footer.ws-footer
+  .container
+    .row
+      // About
+      .col-sm-6.ws-footer-col
+        h3 About Us
+        .ws-footer-separator
+        .ws-footer-about
+          p
+            | We are a family of creators &ndash; close knit and a little crazy &ndash; handcrafting goods at our workshop New York, USA. We make beautiful products from quality materials because believe each one is a representation of who we are close.
+      // Support Links
+      .col-sm-2.ws-footer-col
+        h3 Support
+        .ws-footer-separator
+        ul
+          li
+            a(href='#x') Shipping &amp; Return
+          li
+            a(href='#x') Privacy Policy
+          li
+            a(href='#x') F.A.Q
+          li
+            a(href='#x') Contact Us
+      // Social Links
+      .col-sm-2.ws-footer-col
+        h3 Socials
+        .ws-footer-separator
+        ul.ws-footer-social
+          li
+            a(href='#x')
+              i.fa.fa-facebook-square.fa-lg
+              |  Facebook
+          li
+            a(href='#x')
+              i.fa.fa-twitter.fa-lg
+              |  Twitter
+          li
+            a(href='#x')
+              i.fa.fa-instagram.fa-lg
+              |  Instagram
+          li
+            a(href='#x')
+              i.fa.fa-pinterest.fa-lg
+              |  Pinterest
+      // Shop
+      .col-sm-2.ws-footer-col
+        h3 Shop
+        .ws-footer-separator
+        ul
+          li
+            a(href='#x') Journals
+          li
+            a(href='#x') Abstract Prints
+          li
+            a(href='#x') Illustrated Prints
+          li
+            a(href='#x') Greeting Cards
+// Footer End
+// Footer Bar Start
+.ws-footer-bar
+  .container
+    // Copyright
+    .pull-left
+      p Handcrafted with love &copy; 2015 All rights reserved.
+    // Payments
+    .pull-right
+      ul.ws-footer-payments
+        li
+          i.fa.fa-cc-visa.fa-lg
+        li
+          i.fa.fa-cc-paypal.fa-lg
+        li
+          i.fa.fa-cc-mastercard.fa-lg
+// Footer Bar End
+// Sricpts
+script(src='javascripts/jquery-1.11.3.min.js')
+script(src='javascripts/bootstrap.min.js')
+script(src='javascripts/modernizr-2.8.3-respond-1.4.2.min.js')
+script(src='javascripts/jquery.themepunch.tools.min.js')
+script(src='javascripts/jquery.themepunch.revolution.min.js')
+script(src='javascripts/owl.carousel.min.js')
+script(src='javascripts/parallax.min.js')
+script(src='javascripts/scrollReveal.min.js')
+script(src='javascripts/bootstrap-dropdownhover.min.js')
+script(src='javascripts/main.js')
