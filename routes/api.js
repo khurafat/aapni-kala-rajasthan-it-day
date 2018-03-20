@@ -1,7 +1,7 @@
 const express = require('express');
 const route = express.Router();
-const Product = require('../models/modelProduct');
-const User = require('../models/modelUser');
+const Product = require('../models/Product');
+const User = require('../models/User');
 const uuid = require('uuid4');
 
 route.post('/product', (request, response) => {
@@ -11,19 +11,13 @@ route.post('/product', (request, response) => {
 		Product.create({
 			name: request.body.name,
 			description: request.body.description,
-			price: request.body.price
+			price: request.body.price,
+			userId: user.id
 		}).then((product) => {
-			product.setUser(user);
-			product.save().then(() => {
-				return response.json({
-					result: product.get({
-						plain: true
-					})
-				});
-			}).catch((error) => {
-				return response.json({
-					error: error
-				});
+			return response.json({
+				result: product.get({
+					plain: true
+				})
 			});
 		}).catch((error) => {
 			return response.json({

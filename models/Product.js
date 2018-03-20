@@ -1,6 +1,5 @@
-const db = require('../connections/mysqlConnection');
+const db = require('../connections/mysql');
 const Sequelize = require('sequelize');
-const User = require('./User');
 
 const Product = db.define('product', {
     id: {
@@ -21,10 +20,11 @@ const Product = db.define('product', {
     },
     image: {
         type: Sequelize.STRING
+    },
+    userId: {
+        type: Sequelize.INTEGER,
+        required: true
     }
 });
-
-Product.belongsTo(User);
-User.hasMany(Product);
 
 module.exports = Product;

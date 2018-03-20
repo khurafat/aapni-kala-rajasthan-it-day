@@ -1,4 +1,4 @@
-const db = require('../connections/mysqlConnection');
+const db = require('../connections/mysql');
 const Sequelize = require('sequelize');
 
 const User = db.define('customer', {
