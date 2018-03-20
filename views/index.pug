@@ -201,23 +201,22 @@ header.ws-header-static
         // All
         #all.tab-pane.fade.in.active(role='tabpanel')
           // Item
-          each element in products
-          .col-sm-6.col-md-4.ws-works-item
-            a(href='#')
-              .ws-item-offer
-                // Image
-                figure
-                  img.img-responsive(src='images/5.jpg' alt='Alternative Text')
-              .ws-works-caption.text-center
-                // Item Category
-                .ws-item-category Abstracts Prints
-                // Title
-                h3.ws-item-title Pinning Moon
-                .ws-item-separator
-                // Price
-                .ws-item-price
-                  del $50.00
-                  ins $25.00
+          each product in products
+              .col-sm-6.col-md-4.ws-works-item
+                a(href='#')
+                  .ws-item-offer
+                    // Image
+                    figure
+                      img.img-responsive(src=#{product.image} alt=product.name)
+                  .ws-works-caption.text-center
+                    // Item Category
+                    .ws-item-category Abstracts Prints
+                    // Title
+                    h3.ws-item-title product.name
+                    .ws-item-separator
+                    // Price
+                    .ws-item-price
+                      ins Rs product.name
           // Item
           .col-sm-6.col-md-4.ws-works-item
             a(href='#')
