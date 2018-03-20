@@ -4,9 +4,31 @@ const Product = require('../models/Product');
 const User = require('../models/User');
 const uuid = require('uuid4');
 
+route.get('/product', (request, response) => {
+	User.findOne({
+		token: request.headers.token
+	}).then((user) => {
+		Product.findAll({
+			userId: user.id
+		}).then((products) => {
+			return response.json({
+				result: products
+			});
+		}).catch((error) => {
+			return response.json({
+				error: error
+			});
+		});
+	}).catch((error) => {
+		return response.json({
+			error: error
+		});
+	});
+});
+
 route.post('/product', (request, response) => {
 	User.findOne({
-		token: request.body.token
+		token: request.headers.token
 	}).then((user) => {
 		Product.create({
 			name: request.body.name,
