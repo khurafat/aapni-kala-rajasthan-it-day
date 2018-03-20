@@ -65,6 +65,7 @@ route.post('/product', (request, response) => {
 			name: request.body.name,
 			description: request.body.description,
 			price: request.body.price,
+			image: request.body.image,
 			userId: user.id
 		}).then((product) => {
 			return response.json({

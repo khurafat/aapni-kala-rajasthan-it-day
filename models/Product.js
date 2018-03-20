@@ -19,7 +19,7 @@ const Product = db.define('product', {
         required: true
     },
     image: {
-        type: Sequelize.STRING
+        type: Sequelize.TEXT
     },
     userId: {
         type: Sequelize.INTEGER,
