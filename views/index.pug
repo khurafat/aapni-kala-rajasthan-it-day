@@ -51,64 +51,11 @@ head
   .pull-left
     .ws-topbar-message.hidden-xs
       p
-        | Free Shipping on orders over 
-        span 50$ in USA
+        | Empowering Craftsman 
+        span collection of thousands of arts
   .pull-right
     // Shop Menu
-    ul.ws-shop-menu
-      // Account
-      li.ws-shop-account
-        a.btn.btn-sm(href='my-account.html') My Account
-      // Cart
-      li.ws-shop-cart
-        a.btn.btn-sm(href='#x') Cart (2)
-        // Cart Popover
-        .ws-shop-minicart
-          .minicart-content
-            // Added Items
-            ul.minicart-content-items.clearfix
-              // Item
-              li.media
-                .media-left
-                  // Image
-                  a(href='#')
-                    img.media-object(src='images/5.jpg' alt='Alternative Text')
-                .minicart-content-details.media-body
-                  // Title
-                  h3
-                    a(href='#') Pinning Moon
-                  // Price
-                  span.minicart-content-price $25.00
-                // Remove
-                span.minicart-content-remove
-                  a(href='#')
-                    i.fa.fa-times
-              // Item
-              li.media
-                .media-left
-                  // Image
-                  a(href='#')
-                    img.media-object(src='images/4.jpg' alt='Alternative Text')
-                .minicart-content-details.media-body
-                  // Title
-                  h3
-                    a(href='#') Arkose Factor
-                  // Price
-                  span.minicart-content-price $25.00
-                // Remove
-                span.minicart-content-remove
-                  a(href='#')
-                    i.fa.fa-times
-            // Subtotal
-            .minicart-content-total
-              h3 Subtotal: $50.00
-            // Checkout
-            .ws-shop-menu-checkout
-              .ws-shop-viewcart.pull-left
-                a.btn.btn-sm(href='#x') View Cart
-              .ws-shop-checkout.pull-right
-                a.btn.btn-sm(href='#x') Checkout
-        // End Cart Popover
+
 // Top Bar End
 // Header Start
 header.ws-header-static
@@ -130,53 +77,9 @@ header.ws-header-static
           li.dropdown
             a.dropdown-toggle(href='#x' data-toggle='dropdown' data-hover='dropdown' data-animations='fadeIn')
               | Home 
-              span.caret
-            ul.dropdown-menu
-              li
-                a(href='index.html') Parallax Image
-              li
-                a(href='slider-fullwidth.html') Slider FullWidth
-              li
-                a(href='slider-fullscreen.html') Slider FullScreen
-              li
-                a(href='3d-parallax.html') 3D Parallax Hero
           li
             a(href='about.html') About
-          li.dropdown
-            a.dropdown-toggle(href='#x' data-toggle='dropdown' data-hover='dropdown' data-animations='fadeIn')
-              | Shop 
-              span.caret
-            ul.dropdown-menu
-              li
-                a(href='shop.html') Default Shop Page
-              li
-                a(href='single-product.html') Single Product
-              li
-                a(href='shopping-cart.html') Shopping Cart
-              li
-                a(href='my-account.html') My Account / Register
-              li
-                a(href='checkout.html') Checkout
         ul.nav.navbar-nav.navbar-right
-          li.dropdown
-            a.dropdown-toggle(href='#x' data-toggle='dropdown' data-hover='dropdown' data-animations='fadeIn')
-              | Pages 
-              span.caret
-            ul.dropdown-menu
-              li
-                a(href='index.html') Header Style 1
-              li
-                a(href='second-header.html') Header Style 2
-              li
-                a(href='third-header.html') Header Style 3
-              li
-                a(href='faq.html#shipping') Shipping &amp; Return
-              li
-                a(href='faq.html#privacy') Privacy Policy
-              li
-                a(href='faq.html') F.A.Q
-          li
-            a(href='journal.html') Journal
           li
             a(href='contact.html') Contact
 // End Header
@@ -187,15 +90,15 @@ header.ws-header-static
       // Categories Nav
       ul.nav.nav-tabs(role='tablist')
         li.active(role='presentation')
-          a(href='#all' aria-controls='all' role='tab' data-toggle='tab') All (94)
+          a(href='#all' aria-controls='all' role='tab' data-toggle='tab') All
         li(role='presentation')
-          a(href='#prints' aria-controls='prints' role='tab' data-toggle='tab') Abstract Prints (16)
+          a(href='#prints' aria-controls='prints' role='tab' data-toggle='tab') Abstract
         li(role='presentation')
-          a(href='#illustrated' aria-controls='illustrated' role='tab' data-toggle='tab') Illustrated Prints (18)
+          a(href='#illustrated' aria-controls='illustrated' role='tab' data-toggle='tab') Illustrated
         li(role='presentation')
-          a(href='#journals' aria-controls='journals' role='tab' data-toggle='tab') Journals (6)
+          a(href='#journals' aria-controls='journals' role='tab' data-toggle='tab') Journals
         li(role='presentation')
-          a(href='#sale' aria-controls='sale' role='tab' data-toggle='tab') Sale (33)
+          a(href='#sale' aria-controls='sale' role='tab' data-toggle='tab') Sale
       // Categories Content
       .tab-content
         // All
@@ -207,10 +110,10 @@ header.ws-header-static
                   .ws-item-offer
                     // Image
                     figure
-                      img.img-responsive(src=#{product.image} alt=product.name)
+                      //- img.img-responsive(src=#{product.image} alt=product.name)
                   .ws-works-caption.text-center
                     // Item Category
-                    .ws-item-category Abstracts Prints
+                    .ws-item-category Abstracts 
                     // Title
                     h3.ws-item-title product.name
                     .ws-item-separator
@@ -225,7 +128,7 @@ header.ws-header-static
                 img.img-responsive(src='images/4.jpg' alt='Alternative Text')
               .ws-works-caption.text-center
                 // Item Category
-                .ws-item-category Illustrated Prints
+                .ws-item-category Illustrated 
                 // Title
                 h3.ws-item-title Arkose Factor
                 .ws-item-separator
@@ -239,7 +142,7 @@ header.ws-header-static
                 img.img-responsive(src='images/6.jpg' alt='Alternative Text')
               .ws-works-caption.text-center
                 // Item Category
-                .ws-item-category Abstract Prints
+                .ws-item-category Abstract 
                 // Title
                 h3.ws-item-title Interstellar
                 .ws-item-separator
@@ -254,7 +157,7 @@ header.ws-header-static
                   img.img-responsive(src='images/4.jpg' alt='Alternative Text')
               .ws-works-caption.text-center
                 // Item Category
-                .ws-item-category Abstract Prints
+                .ws-item-category Abstract 
                 // Title
                 h3.ws-item-title Pinning Moon
                 .ws-item-separator
@@ -270,7 +173,7 @@ header.ws-header-static
                 img.img-responsive(src='images/1.jpg' alt='Alternative Text')
               .ws-works-caption.text-center
                 // Item Category
-                .ws-item-category Illustrated Prints
+                .ws-item-category Illustrated 
                 // Title
                 h3.ws-item-title Arkose Factor
                 .ws-item-separator
@@ -284,7 +187,7 @@ header.ws-header-static
                 img.img-responsive(src='images/2.jpg' alt='Alternative Text')
               .ws-works-caption.text-center
                 // Item Category
-                .ws-item-category Abstract Prints
+                .ws-item-category Abstract 
                 // Title
                 h3.ws-item-title Interstellar
                 .ws-item-separator
@@ -314,7 +217,7 @@ header.ws-header-static
                   img.img-responsive(src='images/7.jpg' alt='Alternative Text')
               .ws-works-caption.text-center
                 // Item Category
-                .ws-item-category Abstract Prints
+                .ws-item-category Abstract 
                 // Title
                 h3.ws-item-title Pinning Moon
                 .ws-item-separator
@@ -330,7 +233,7 @@ header.ws-header-static
                 img.img-responsive(src='images/3.jpg' alt='Alternative Text')
               .ws-works-caption.text-center
                 // Item Category
-                .ws-item-category Abstract Prints
+                .ws-item-category Abstract 
                 // Title
                 h3.ws-item-title Lake House
                 .ws-item-separator
@@ -344,7 +247,7 @@ header.ws-header-static
                 img.img-responsive(src='images/2.jpg' alt='Alternative Text')
               .ws-works-caption.text-center
                 // Item Category
-                .ws-item-category Illustrated Prints
+                .ws-item-category Illustrated 
                 // Title
                 h3.ws-item-title Sorbetto
                 .ws-item-separator
@@ -373,7 +276,7 @@ header.ws-header-static
                   img.img-responsive(src='images/3.jpg' alt='Alternative Text')
               .ws-works-caption.text-center
                 // Item Category
-                .ws-item-category Illustrated Prints
+                .ws-item-category Illustrated 
                 // Title
                 h3.ws-item-title Grey Mountains
                 .ws-item-separator
@@ -387,13 +290,13 @@ header.ws-header-static
                 img.img-responsive(src='images/4.jpg' alt='Alternative Text')
               .ws-works-caption.text-center
                 // Item Category
-                .ws-item-category Abstract Prints
+                .ws-item-category Abstract 
                 // Title
                 h3.ws-item-title Thinking Wood
                 .ws-item-separator
                 // Price
                 .ws-item-price $23.00
-        // Abstract Prints
+        // Abstract 
         #prints.tab-pane.fade(role='tabpanel')
           // Item
           .col-sm-6.col-md-4.ws-works-item
@@ -403,7 +306,7 @@ header.ws-header-static
                 img.img-responsive(src='images/1.jpg' alt='Alternative Text')
               .ws-works-caption.text-center
                 // Item Category
-                .ws-item-category Abstract Prints
+                .ws-item-category Abstract 
                 // Title
                 h3.ws-item-title Thinking Wood
                 .ws-item-separator
@@ -740,111 +643,13 @@ header.ws-header-static
       .ws-more-btn-holder.col-sm-12
         a.btn.ws-more-btn(href='#x')  Load More
 // End Page Content
-// Instagram Content
-section#ws-instagram-section
-  .container
-    .row.vertical-align
-      // Instagram Information
-      .col-sm-3
-        .ws-instagram-header
-          h3 Instagram
-          br
-          a.ws-instagram-link(href='https://www.instagram.com/' target='_blank')  @artday
-          p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.
-      // Instagram Item
-      .col-sm-3.ws-instagram-item(data-sr='wait 0.1s, ease-in 20px')
-        a(href='https://www.instagram.com/' target='_blank')
-          img.img-responsive(src='images/1.jpg' alt='Alternative Text')
-      // Instagram Item
-      .col-sm-3.ws-instagram-item(data-sr='wait 0.3s, ease-in 20px')
-        a(href='https://www.instagram.com/' target='_blank')
-          img.img-responsive(src='images/4.jpg' alt='Alternative Text')
-      // Instagram Item
-      .col-sm-3.ws-instagram-item(data-sr='wait 0.5s, ease-in 20px')
-        a(href='https://www.instagram.com/' target='_blank')
-          img.img-responsive(src='images/8.jpg' alt='Alternative Text')
-// End Instagram Content
-// Subscribe Section
-section.ws-subscribe-section
-  .container
-    .row
-      // Subscribe Content
-      .ws-subscribe-content.text-center.clearfix
-        .col-sm-8.col-sm-offset-2
-          h3 Sign up for the newsletter
-          .ws-separator
-          // Form
-          form.form-inline
-            .form-group
-              input.form-control(type='email' placeholder='Enter your email')
-            // Button
-            a.btn.ws-btn-subscribe Subscribe
-// End Subscribe Section
-// Footer Start
-footer.ws-footer
-  .container
-    .row
-      // About
-      .col-sm-6.ws-footer-col
-        h3 About Us
-        .ws-footer-separator
-        .ws-footer-about
-          p
-            | We are a family of creators &ndash; close knit and a little crazy &ndash; handcrafting goods at our workshop New York, USA. We make beautiful products from quality materials because believe each one is a representation of who we are close.
-      // Support Links
-      .col-sm-2.ws-footer-col
-        h3 Support
-        .ws-footer-separator
-        ul
-          li
-            a(href='#x') Shipping &amp; Return
-          li
-            a(href='#x') Privacy Policy
-          li
-            a(href='#x') F.A.Q
-          li
-            a(href='#x') Contact Us
-      // Social Links
-      .col-sm-2.ws-footer-col
-        h3 Socials
-        .ws-footer-separator
-        ul.ws-footer-social
-          li
-            a(href='#x')
-              i.fa.fa-facebook-square.fa-lg
-              |  Facebook
-          li
-            a(href='#x')
-              i.fa.fa-twitter.fa-lg
-              |  Twitter
-          li
-            a(href='#x')
-              i.fa.fa-instagram.fa-lg
-              |  Instagram
-          li
-            a(href='#x')
-              i.fa.fa-pinterest.fa-lg
-              |  Pinterest
-      // Shop
-      .col-sm-2.ws-footer-col
-        h3 Shop
-        .ws-footer-separator
-        ul
-          li
-            a(href='#x') Journals
-          li
-            a(href='#x') Abstract Prints
-          li
-            a(href='#x') Illustrated Prints
-          li
-            a(href='#x') Greeting Cards
-// Footer End
+
 // Footer Bar Start
 .ws-footer-bar
   .container
     // Copyright
     .pull-left
-      p Handcrafted with love &copy; 2015 All rights reserved.
+      p Handcrafted with love &copy; 2018 All rights reserved.
     // Payments
     .pull-right
       ul.ws-footer-payments
