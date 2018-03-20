@@ -1,25 +1,29 @@
 const db = require('../connections/mysql');
 const Sequelize = require('sequelize');
 
-const Product = db.define('product', {
+const Address = db.define('address', {
     id: {
         type: Sequelize.INTEGER,
         primaryKey: true,
         autoIncrement: true
     },
     name: {
-        type: Sequelize.STRING,
-        required: true
-    },
-    description: {
         type: Sequelize.STRING
     },
-    price: {
-        type: Sequelize.INTEGER,
-        required: true
+    house: {
+        type: Sequelize.STRING
     },
-    image: {
-        type: Sequelize.TEXT
+    street: {
+        type: Sequelize.STRING
+    },
+    city: {
+        type: Sequelize.STRING
+    },
+    country: {
+        type: Sequelize.STRING
+    },
+    pinCode: {
+        type: Sequelize.STRING
     },
     userId: {
         type: Sequelize.INTEGER,
@@ -27,4 +31,4 @@ const Product = db.define('product', {
     }
 });
 
-module.exports = Product;
+module.exports = Address;
