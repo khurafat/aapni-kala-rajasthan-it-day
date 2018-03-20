@@ -1,18 +1,17 @@
 {
-  "name": "rajhack",
-  "version": "0.0.1",
-  "description": "IVR system",
-  "main": "src/index.js",
+  "name": "itday",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www"
   },
-  "author": "Aman Jain, Piyush Agarwal, Shashwat Gulyani and Mandeep Singh",
-  "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.18.2",
-    "express": "^4.16.3",
-    "mysql2": "^1.5.3",
-    "sequelize": "^4.37.3",
-    "uuid4": "^1.0.0"
+    "body-parser": "~1.18.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.15.5",
+    "morgan": "~1.9.0",
+    "pug": "2.0.0-beta11",
+    "serve-favicon": "~2.4.5"
   }
 }
