@@ -6,15 +6,24 @@ const uuid = require('uuid4');
 
 route.post('/product', (request, response) => {
 	User.findOne({
-		
+		token: request.body.token
 	}).then((user) => {
 		Product.create({
-			name: request.body.name
+			name: request.body.name,
+			description: request.body.description,
+			price: request.body.price
 		}).then((product) => {
-			return response.json({
-				result: product.get({
-					plain: true
-				})
+			product.setUser(user);
+			product.save().then(() => {
+				return response.json({
+					result: product.get({
+						plain: true
+					})
+				});
+			}).catch((error) => {
+				return response.json({
+					error: error
+				});
 			});
 		}).catch((error) => {
 			return response.json({

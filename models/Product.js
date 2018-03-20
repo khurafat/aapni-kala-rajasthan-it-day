@@ -24,8 +24,7 @@ const Product = db.define('product', {
     }
 });
 
-Product.hasOne(User, {
-	foreignKey: 'user_id'
-});
+Product.belongsTo(User);
+User.hasMany(Product);
 
 module.exports = Product;

@@ -5,7 +5,7 @@ const db = new Sequelize('simulator', 'simadmin', '1234', {
     dialect: 'mysql'
 });
 
-db.sync({force: true})
+db.sync()
     .then(() => {
         console.log("Database Synchronised");
     })
